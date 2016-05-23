@@ -10,10 +10,17 @@ French guide app (iOS only for now) to the first Yokai Watch 3DS Game.
 
 ###Prerequisites
 
-You will need to have [node.JS](https://nodejs.org), [Xcode](https://developer.apple.com/xcode/download) and [Ionic CLI](http://ionicframework.com/docs/cli/install.html) installed to build the app on your machine:
+You will need to have [node.JS](https://nodejs.org), [Xcode](https://developer.apple.com/xcode/download), [Bower](https://bower.io) and [Ionic CLI](http://ionicframework.com/docs/cli/install.html) installed to build the app on your machine:
 
 - **node.JS** can be downloaded at https://nodejs.org
 - **Xcode** can be downloaded for free at https://developer.apple.com/xcode/download
+- **Bower** can be installed via NPM:
+
+    ```sh
+    npm install -g bower
+    ```
+    (node.JS must be installed before installing Bower)
+
 - **Ionic CLI** can be installed via NPM:
 
     ```sh
