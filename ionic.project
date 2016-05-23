@@ -1,4 +1,7 @@
 {
   "name": "YokaiGuide",
-  "app_id": ""
+  "app_id": "",
+  "gulpStartupTasks": [
+    "watch"
+  ]
 }
