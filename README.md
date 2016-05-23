@@ -49,7 +49,6 @@ Select a simulator or a device in the top bar on the left and click the play but
 ##Development
 
 ```sh
-gulp watch
 ionic serve --lab
 ```
 
