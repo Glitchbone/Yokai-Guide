@@ -1,7 +1,7 @@
 {
   "name": "YokaiGuide",
   "version": "0.0.1",
-  "description": "French guide app to the Yokai Watch Game",
+  "description": "French guide app to the first Yokai Watch 3DS Game",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",

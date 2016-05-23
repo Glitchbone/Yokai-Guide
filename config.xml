@@ -2,7 +2,7 @@
 <widget id="com.glitchbone.YokaiGuide" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>YokaiGuide</name>
     <description>
-        French guide app to the Yokai Watch Game
+        French guide app to the first Yokai Watch 3DS Game
     </description>
     <author email="adrien@glitchbone.com" href="http://glitchbone.com/">
         Adrien Glitchbone
