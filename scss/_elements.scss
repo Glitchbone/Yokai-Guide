@@ -1,0 +1,48 @@
+.yokai-rank {
+
+    display: inline-block;
+    line-height: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+    background-color: $color-blue-light;
+
+    &__text {
+        color: #fff;
+        font-size: 12px;
+        @include text-outline($color-blue, 1px);
+    }
+
+    &__letter {
+        font-size: 18px;
+        font-family: 'groboldregular';
+        @include text-outline(#000);
+
+        &.rank-A {
+            color: $color-rank-a;
+        }
+
+        &.rank-B {
+            color: $color-rank-b;
+        }
+
+        &.rank-C {
+            color: $color-rank-c;
+        }
+
+        &.rank-D {
+            color: $color-rank-d;
+        }
+
+        &.rank-E {
+            color: $color-rank-e;
+        }
+
+        &.rank-S {
+            color: $color-rank-s;
+            @include text-outline(#fff);
+        }
+    }
+
+}

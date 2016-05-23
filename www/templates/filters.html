@@ -1,0 +1,38 @@
+<ion-modal-view>
+
+    <ion-header-bar class="bar-yokai">
+        <h1 class="title">Filtrer</h1>
+        <button ng-click="filtersModal.hide()" class="button button-icon icon ion-ios-close-empty"></button>
+    </ion-header-bar>
+
+    <ion-content class="padding">
+
+        <ion-list>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Rang
+                </div>
+                <select>
+                    <option>Tout</option>
+                </select>
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Tribu
+                </div>
+                <select>
+                    <option>Tout</option>
+                </select>
+            </label>
+
+            <button ng-click="filtersModal.hide()" class="button button-full button-balanced">
+                Valider
+            </button>
+
+        </ion-list>
+
+    </ion-content>
+
+</ion-modal-view>

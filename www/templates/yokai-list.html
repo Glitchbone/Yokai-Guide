@@ -1,0 +1,51 @@
+<ion-view>
+
+    <ion-header-bar class="bar-yokai">
+        <button ng-click="showSearchBar()" class="button button-icon icon ion-ios-search-strong"></button>
+        <div class="title">
+            <img class="title-image" src="img/yokai-watch-logo.png" />
+        </div>
+        <!--<button ng-click="showFilters()" class="button button-icon icon ion-ios-settings"></button>-->
+    </ion-header-bar>
+
+    <ion-content>
+
+        <ion-list>
+
+            <div class="yokai-sort-bar">
+
+                <a ng-class="{'active': sort == 'name' || sort == '-name'}" ng-click="setSortOrder('name')" class="button button-small">
+                    A-Z <i ng-class="{'ion-chevron-up': sort == 'name', 'ion-chevron-down': sort == '-name'}"></i>
+                </a>
+                <a ng-class="{'active': sort == 'rank' || sort == '-rank'}" ng-click="setSortOrder('rank')" class="button button-small">
+                    RANG <i ng-class="{'ion-chevron-up': sort == 'rank', 'ion-chevron-down': sort == '-rank'}"></i>
+                </a>
+                <a ng-class="{'active': sort == 'number' || sort == '-number'}" ng-click="setSortOrder('number')" class="button button-small">
+                    N° <i ng-class="{'ion-chevron-up': sort == 'number', 'ion-chevron-down': sort == '-number'}"></i>
+                </a>
+
+            </div>
+
+            <div class="yokai-list">
+
+                <div ng-click="showDetail({{yokai.number}})" ng-repeat="yokai in yokaiList | orderBy:sort" class="item item-avatar yokai-item" href="#/yokai/{{yokai.number}}">
+                    <img ng-src="img/yokai_pictures/{{yokai.number}}.png">
+                    <div class="yokai-item__content">
+                        <div>
+                            <span class="yokai-item__name">{{yokai.name}}</span>
+                            <span class="yokai-item__number">N° {{yokai.number}}</span>
+                        </div>
+
+                        <span class="yokai-rank">
+                            <span class="yokai-rank__text">RANG</span> <span class="yokai-rank__letter rank-{{yokai.rank}}">{{yokai.rank}}</span>
+                        </span>
+                    </h2>
+                </div>
+
+            </div>
+
+        </ion-list>
+
+    </ion-content>
+
+</ion-view>

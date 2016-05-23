@@ -1,0 +1,24 @@
+.bar.bar-yokai {
+
+    background-color: $color-yellow;
+    border-bottom-width: 0;
+
+    &,
+    & {
+        .button {
+            color: #000;
+        }
+    }
+
+    .title {
+        font-family: 'groboldregular';
+        color: #fff;
+        @include text-outline();
+    }
+
+    .title-image {
+        height: 100%;
+        width: auto;
+        padding: 4px;
+    }
+}

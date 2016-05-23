@@ -1,0 +1,32 @@
+@mixin yokai-bg() {
+
+    background: url(../img/yokai-bg-pattern.png),
+    repeating-linear-gradient(
+        0deg,
+        #3bbeeb,
+        #3bbeeb 3px,
+        #39b3e9 3px,
+        #39b3e9 6px
+    );
+    background-attachment: fixed;
+
+}
+
+@mixin text-outline($color: #000, $size: 1px) {
+
+    text-shadow:
+        -#{$size} -#{$size} 0 $color,
+        #{$size} -#{$size} 0 $color,
+        -#{$size} #{$size} 0 $color,
+        #{$size} #{$size} 0 $color;
+
+}
+
+@mixin panel() {
+
+    padding: 8px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 8px;
+    border: 1px solid #333;
+
+}

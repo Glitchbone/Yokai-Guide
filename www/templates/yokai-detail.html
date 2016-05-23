@@ -1,0 +1,62 @@
+<ion-modal-view class="yokai-detail">
+
+    <ion-header-bar class="bar-yokai">
+        <h1 class="title">{{yokai.name}}</h1>
+        <button ng-click="yokaiDetail.hide()" class="button button-icon icon ion-ios-close-empty"></button>
+    </ion-header-bar>
+
+    <ion-content>
+
+        <div class="row yokai-detail__top">
+
+            <div class="col">
+
+                <div class="yokai-detail__image">
+                    <img ng-src="img/yokai_pictures/{{yokai.number}}.png">
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="yokai-detail__number">N° {{yokai.number}}</div>
+
+                <span class="yokai-rank yokai-detail__rank">
+                    <span class="yokai-rank__text">RANG</span> <span class="yokai-rank__letter rank-{{yokai.rank}}">{{yokai.rank}}</span>
+                </span>
+
+                <div class="yokai-detail__class">{{yokai.class}}</div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+
+                <div class="yokai-detail__panel">
+
+                    <div class="yokai-detail__panel-title">Où le trouver:</div>
+                    <p class="yokai-detail__panel-body">
+                        {{yokai.location}}
+                    </p>
+
+                </div>
+
+                <div class="yokai-detail__panel">
+
+                    <div class="yokai-detail__panel-title">Nourriture préférée:</div>
+                    <p class="yokai-detail__panel-body">
+                        {{yokai.food}}
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+
+</ion-modal-view>

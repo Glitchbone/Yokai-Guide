@@ -1,0 +1,65 @@
+.yokai-detail {
+
+    @include yokai-bg();
+
+    &__top {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        background-color: rgba($color-blue, .4);
+        margin-bottom: 16px;
+        border-bottom: 1px solid #fff;
+    }
+
+    &__image {
+        text-align: center;
+    }
+
+    &__number,
+    &__class,
+    &__rank {
+        margin-bottom: 8px;
+    }
+
+    &__number {
+        color: $color-blue;
+        font-weight: 700;
+        font-size: 20px;
+        @include text-outline(#fff, 1px);
+        margin-top: 8px;
+    }
+
+    &__class {
+        color: $color-blue;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        @include text-outline(#fff, 1px);
+    }
+
+    &__panel {
+
+        //@include panel();
+
+        margin-bottom: 16px;
+
+        &-title {
+            color: #fff;
+            @include text-outline($color-blue, 1px);
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        &-body {
+            font-size: 14px;
+        }
+
+        p:first-child,
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+}

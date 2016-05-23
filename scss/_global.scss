@@ -1,0 +1,15 @@
+.pane {
+    @include yokai-bg();
+}
+
+.modal-backdrop {
+    z-index: 20;
+}
+
+.list {
+    padding-top: 0;
+}
+
+.yokai-list {
+    padding: 8px;
+}

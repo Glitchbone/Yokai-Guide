@@ -1,0 +1,27 @@
+.yokai-sort-bar {
+
+    background-color: $color-blue;
+    text-align: center;
+    overflow: auto;
+
+    .button {
+        width: 33.33%;
+        line-height: 36px;
+        float: left;
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+        font-weight: bold;
+        color: rgba(255, 255, 255, .6);
+        border-right: 1px solid rgba(255, 255, 255, .4);
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        &.active {
+            color: #fff;
+        }
+    }
+
+}
